@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity"
+    android:background="@color/light_dark">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toolbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/ic_back"
+            android:layout_marginStart="16dp"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/reload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/ic_reload"
+            android:layout_marginEnd="16dp"/>
+        
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/back"
+            app:layout_constraintEnd_toStartOf="@+id/reload"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="@string/add_vehicle"
+            android:layout_marginHorizontal="8dp"
+            android:fontFamily="@font/opensansbold"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarLayout">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="16dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="16dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSixDigits"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/opensansregular"
+            android:text="@string/enter_last_6_digits_of_IMEI"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@id/guidelineEnd"
+            app:layout_constraintStart_toEndOf="@id/guidelineStart"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_cOne"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_edittext_bg"
+            android:inputType="number"
+            android:gravity="center"
+            android:maxLength="1"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/opensansregular"
+            app:layout_constraintStart_toEndOf="@id/guidelineStart"
+            app:layout_constraintEnd_toStartOf="@+id/et_cTwo"
+            app:layout_constraintTop_toBottomOf="@+id/tvSixDigits"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_cTwo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_edittext_bg"
+            android:inputType="number"
+            android:gravity="center"
+            android:maxLength="1"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/opensansregular"
+            app:layout_constraintEnd_toStartOf="@+id/et_cThree"
+            app:layout_constraintStart_toEndOf="@id/et_cOne"
+            app:layout_constraintTop_toBottomOf="@+id/tvSixDigits" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_cThree"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_edittext_bg"
+            android:inputType="number"
+            android:gravity="center"
+            android:maxLength="1"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/opensansregular"
+            app:layout_constraintEnd_toStartOf="@+id/et_cFour"
+            app:layout_constraintStart_toEndOf="@id/et_cTwo"
+            app:layout_constraintTop_toBottomOf="@+id/tvSixDigits" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_cFour"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_edittext_bg"
+            android:inputType="number"
+            android:gravity="center"
+            android:maxLength="1"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/opensansregular"
+            app:layout_constraintEnd_toStartOf="@+id/et_cFive"
+            app:layout_constraintStart_toEndOf="@id/et_cThree"
+            app:layout_constraintTop_toBottomOf="@+id/tvSixDigits" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_cFive"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_edittext_bg"
+            android:inputType="number"
+            android:gravity="center"
+            android:maxLength="1"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/opensansregular"
+            app:layout_constraintEnd_toStartOf="@+id/et_cSix"
+            app:layout_constraintStart_toEndOf="@id/et_cFour"
+            app:layout_constraintTop_toBottomOf="@+id/tvSixDigits" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_cSix"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/rounded_edittext_bg"
+            android:inputType="number"
+            android:gravity="center"
+            android:maxLength="1"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/opensansregular"
+            app:layout_constraintEnd_toStartOf="@id/guidelineEnd"
+            app:layout_constraintTop_toBottomOf="@+id/tvSixDigits" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvIMEI"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/opensansregular"
+            android:text="@string/imei"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@id/guidelineEnd"
+            app:layout_constraintStart_toEndOf="@id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@+id/et_cOne" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_imei"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_edittext_bg"
+            android:inputType="number"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/opensansregular"
+            app:layout_constraintStart_toEndOf="@id/guidelineStart"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+            app:layout_constraintTop_toBottomOf="@+id/tvIMEI"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/IvScan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@+id/et_imei"
+            app:layout_constraintBottom_toBottomOf="@+id/et_imei"
+            app:layout_constraintEnd_toEndOf="@+id/et_imei"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/scan"
+            android:layout_marginStart="12dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvVehicleDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/opensansregular"
+            android:text="@string/vehicle_details"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@id/guidelineEnd"
+            app:layout_constraintStart_toEndOf="@id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@+id/et_imei" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etTagName"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_edittext_bg"
+            android:inputType="text"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:maxLength="50"
+            android:hint="@string/tag_name"
+            android:textColorHint="@color/hint_color"
+            android:textColor="@color/black"
+            android:fontFamily="@font/opensansregular"
+            app:layout_constraintStart_toEndOf="@id/guidelineStart"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+            app:layout_constraintTop_toBottomOf="@+id/tvVehicleDetails"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etRegNumber"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_edittext_bg"
+            android:textSize="16sp"
+            android:inputType="text"
+            android:padding="8dp"
+            android:maxLength="50"
+            android:hint="@string/registration_number"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hint_color"
+            android:fontFamily="@font/opensansregular"
+            app:layout_constraintStart_toEndOf="@id/guidelineStart"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+            app:layout_constraintTop_toBottomOf="@+id/etTagName"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvVehicleType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/opensansregular"
+            android:text="@string/vehicle_type"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@id/guidelineEnd"
+            app:layout_constraintStart_toEndOf="@id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@+id/etRegNumber" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/IvMore"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_add"
+            app:layout_constraintTop_toBottomOf="@+id/tvVehicleType"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvMoreLess"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensansregular"
+            android:text="@string/more"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@id/IvMore"
+            app:layout_constraintEnd_toEndOf="@id/IvMore"
+            app:layout_constraintTop_toBottomOf="@+id/IvMore" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+            app:layout_constraintEnd_toStartOf="@+id/IvMore"
+            app:layout_constraintTop_toTopOf="@+id/IvMore"
+            app:layout_constraintBottom_toBottomOf="@+id/tvMoreLess"/>
+
+
+        <Spinner
+            android:popupBackground="@color/white"
+            android:id="@+id/vehicleMakeSpinner"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintEnd_toStartOf="@+id/vehicleModelSpinner"
+            app:layout_constraintTop_toBottomOf="@+id/tvMoreLess"
+            android:background="@drawable/spinner_bg"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/IvVMake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            app:layout_constraintTop_toTopOf="@+id/vehicleMakeSpinner"
+            app:layout_constraintBottom_toBottomOf="@+id/vehicleMakeSpinner"
+            app:layout_constraintEnd_toEndOf="@+id/vehicleMakeSpinner"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_spinner_drop_down"/>
+
+        <Spinner
+            android:popupBackground="@color/white"
+            android:id="@+id/vehicleModelSpinner"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@+id/vehicleMakeSpinner"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintTop_toTopOf="@+id/vehicleMakeSpinner"
+            app:layout_constraintBottom_toBottomOf="@+id/vehicleMakeSpinner"
+            android:background="@drawable/spinner_bg"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/IvVModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            app:layout_constraintTop_toTopOf="@+id/vehicleModelSpinner"
+            app:layout_constraintBottom_toBottomOf="@+id/vehicleModelSpinner"
+            app:layout_constraintEnd_toEndOf="@+id/vehicleModelSpinner"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_spinner_drop_down"/>
+
+        <Spinner
+            android:popupBackground="@color/white"
+            android:id="@+id/vehicleYearSpinner"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintTop_toBottomOf="@+id/vehicleMakeSpinner"
+            android:background="@drawable/spinner_bg"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/IvVmySpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            app:layout_constraintTop_toTopOf="@+id/vehicleYearSpinner"
+            app:layout_constraintBottom_toBottomOf="@+id/vehicleYearSpinner"
+            app:layout_constraintEnd_toEndOf="@+id/vehicleYearSpinner"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_spinner_drop_down"/>
+
+
+        <Spinner
+            android:popupBackground="@color/white"
+            android:id="@+id/fuelTypeSpinner"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintTop_toBottomOf="@+id/vehicleYearSpinner"
+            android:background="@drawable/spinner_bg"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/IvFuelTypeSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            app:layout_constraintTop_toTopOf="@+id/fuelTypeSpinner"
+            app:layout_constraintBottom_toBottomOf="@+id/fuelTypeSpinner"
+            app:layout_constraintEnd_toEndOf="@+id/fuelTypeSpinner"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_spinner_drop_down"/>
+
+        <Spinner
+            android:popupBackground="@color/white"
+            android:id="@+id/vehicleCapacitySpinner"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintTop_toBottomOf="@+id/fuelTypeSpinner"
+            android:background="@drawable/spinner_bg"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/IvkmSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            app:layout_constraintTop_toTopOf="@+id/vehicleCapacitySpinner"
+            app:layout_constraintBottom_toBottomOf="@+id/vehicleCapacitySpinner"
+            app:layout_constraintEnd_toEndOf="@+id/vehicleCapacitySpinner"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_spinner_drop_down"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvOwnership"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/opensansregular"
+            android:text="@string/ownership"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@+id/vehicleCapacitySpinner" />
+
+        <RadioGroup
+            android:id="@+id/radioGroug"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/tvOwnership"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd">
+
+            <RadioButton android:id="@+id/radioBtnOwn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/own"
+                android:checked="true"
+                android:layout_margin="8dp"
+                android:buttonTint="@color/red"/>
+
+            <RadioButton android:id="@+id/radioBtnContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contractor"
+                android:layout_margin="8dp"
+                android:buttonTint="@color/red"/>
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etDriver"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_edittext_bg"
+            android:inputType="text"
+            android:textSize="16sp"
+            android:text="Driver"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/opensansregular"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintEnd_toEndOf="@+id/guidelineEnd"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroug"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/IvDriver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@+id/etDriver"
+            app:layout_constraintBottom_toBottomOf="@+id/etDriver"
+            app:layout_constraintEnd_toEndOf="@+id/etDriver"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_arrow_forward"
+            android:layout_marginRight="12dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAdd"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="80dp"
+            android:text="@string/add_details"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintEnd_toEndOf="@+id/guidelineEnd"
+            app:layout_constraintTop_toBottomOf="@+id/etDriver"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:fontFamily="@font/opensansregular"
+            android:textAllCaps="false"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

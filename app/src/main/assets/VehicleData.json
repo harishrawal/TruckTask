@@ -1,0 +1,1804 @@
+{
+  "status": 200,
+  "message": "Data Available",
+  "vehicle_type": [
+    {
+      "text": "Truck",
+      "value": 21,
+      "images": ""
+    },
+    {
+      "text": "Semi Truck",
+      "value": 22,
+      "images": ""
+    },
+    {
+      "text": "Dump Truck",
+      "value": 23,
+      "images": ""
+    },
+    {
+      "text": "DCM Truck",
+      "value": 24,
+      "images": ""
+    },
+    {
+      "text": "Garbage Truck",
+      "value": 25,
+      "images": ""
+    },
+    {
+      "text": "Tank Truck",
+      "value": 26,
+      "images": ""
+    },
+    {
+      "text": "Refrigerator Truck",
+      "value": 27,
+      "images": ""
+    },
+    {
+      "text": "Trailer Truck",
+      "value": 28,
+      "images": ""
+    },
+    {
+      "text": "Rigid Trucks",
+      "value": 29,
+      "images": ""
+    },
+    {
+      "text": "Bike",
+      "value": 30,
+      "images": ""
+    },
+    {
+      "text": "Bus",
+      "value": 31,
+      "images": ""
+    },
+    {
+      "text": "Car",
+      "value": 32,
+      "images": ""
+    },
+    {
+      "text": "Car Hatchback",
+      "value": 33,
+      "images": ""
+    },
+    {
+      "text": "Car Sedan",
+      "value": 34,
+      "images": ""
+    },
+    {
+      "text": "Car SUV",
+      "value": 35,
+      "images": ""
+    },
+    {
+      "text": "Tanker",
+      "value": 36,
+      "images": ""
+    },
+    {
+      "text": "E-Rickshaw",
+      "value": 37,
+      "images": ""
+    },
+    {
+      "text": "Tipper",
+      "value": 38,
+      "images": ""
+    },
+    {
+      "text": "Auto-Rickshaw",
+      "value": 39,
+      "images": ""
+    },
+    {
+      "text": "PickupVan",
+      "value": 40,
+      "images": ""
+    },
+    {
+      "text": "TempoTraveller",
+      "value": 41,
+      "images": ""
+    },
+    {
+      "text": "Tractor",
+      "value": 42,
+      "images": ""
+    },
+    {
+      "text": "AERIAL PLATFORM",
+      "value": 44,
+      "images": ""
+    },
+    {
+      "text": "AIR COMPRESSOR",
+      "value": 45,
+      "images": ""
+    },
+    {
+      "text": "BATCHING PLANT",
+      "value": 46,
+      "images": ""
+    },
+    {
+      "text": "BOOM PLACER",
+      "value": 47,
+      "images": ""
+    },
+    {
+      "text": "CHEMICAL TANKER",
+      "value": 48,
+      "images": ""
+    },
+    {
+      "text": "CONSTRUCTION TANKER",
+      "value": 49,
+      "images": ""
+    },
+    {
+      "text": "CRAWLER CRANE",
+      "value": 50,
+      "images": ""
+    },
+    {
+      "text": "DDU ",
+      "value": 51,
+      "images": ""
+    },
+    {
+      "text": "DOZER",
+      "value": 52,
+      "images": ""
+    },
+    {
+      "text": "DRINKING TANKER",
+      "value": 53,
+      "images": ""
+    },
+    {
+      "text": "EXCAVATOR",
+      "value": 54,
+      "images": ""
+    },
+    {
+      "text": "Forklift",
+      "value": 55,
+      "images": ""
+    },
+    {
+      "text": "GARBAGE DUMPER",
+      "value": 56,
+      "images": ""
+    },
+    {
+      "text": "GULLY SUCKER",
+      "value": 57,
+      "images": ""
+    },
+    {
+      "text": "HYVA DUMPER",
+      "value": 58,
+      "images": ""
+    },
+    {
+      "text": "JCB",
+      "value": 59,
+      "images": ""
+    },
+    {
+      "text": "MINI EXCAVATOR",
+      "value": 60,
+      "images": ""
+    },
+    {
+      "text": "MOTOR GRADER",
+      "value": 61,
+      "images": ""
+    },
+    {
+      "text": "PICK AND CARRY CRANE",
+      "value": 62,
+      "images": ""
+    },
+    {
+      "text": "PICKUP VAN",
+      "value": 63,
+      "images": ""
+    },
+    {
+      "text": "PIPE HANDLER",
+      "value": 64,
+      "images": ""
+    },
+    {
+      "text": "REACH STACKER",
+      "value": 65,
+      "images": ""
+    },
+    {
+      "text": "SCISSOR LIFTS",
+      "value": 66,
+      "images": ""
+    },
+    {
+      "text": "SERVICE VAN",
+      "value": 67,
+      "images": ""
+    },
+    {
+      "text": "SEWAGE TANKER",
+      "value": 68,
+      "images": ""
+    },
+    {
+      "text": "STEER SKID LOADER (BOBCAT)",
+      "value": 69,
+      "images": ""
+    },
+    {
+      "text": "TATA 207",
+      "value": 70,
+      "images": ""
+    },
+    {
+      "text": "TIPPER DUMPER",
+      "value": 71,
+      "images": ""
+    },
+    {
+      "text": "TOWING VAN",
+      "value": 72,
+      "images": ""
+    },
+    {
+      "text": "TRACTOR TROLLEY",
+      "value": 73,
+      "images": ""
+    },
+    {
+      "text": "TRAILER",
+      "value": 74,
+      "images": ""
+    },
+    {
+      "text": "TRANSIT MIXER",
+      "value": 75,
+      "images": ""
+    },
+    {
+      "text": "TYRE MOUNTED CRANE",
+      "value": 77,
+      "images": ""
+    },
+    {
+      "text": "VIBRO ROLLER",
+      "value": 78,
+      "images": ""
+    },
+    {
+      "text": "Welding DG",
+      "value": 79,
+      "images": ""
+    },
+    {
+      "text": "WHEEL LOADER",
+      "value": 80,
+      "images": ""
+    },
+    {
+      "text": "e-Loader",
+      "value": 43,
+      "images": ""
+    },
+    {
+      "text": "wagon",
+      "value": 81,
+      "images": ""
+    }
+  ],
+  "vehicle_capacity": [
+    {
+      "text": "0-5",
+      "value": 1,
+      "images": ""
+    },
+    {
+      "text": "6-10",
+      "value": 2,
+      "images": ""
+    },
+    {
+      "text": "11-15",
+      "value": 3,
+      "images": ""
+    },
+    {
+      "text": "16-20",
+      "value": 4,
+      "images": ""
+    },
+    {
+      "text": "21-25",
+      "value": 5,
+      "images": ""
+    }
+  ],
+  "vehicle_make": [
+    {
+      "text": "Maruti Suzuki",
+      "value": 1,
+      "images": ""
+    },
+    {
+      "text": "Hyundai India",
+      "value": 2,
+      "images": ""
+    },
+    {
+      "text": "Tata Motors",
+      "value": 3,
+      "images": ""
+    },
+    {
+      "text": "Mahindra",
+      "value": 4,
+      "images": ""
+    },
+    {
+      "text": "Honda",
+      "value": 5,
+      "images": ""
+    },
+    {
+      "text": "Honda",
+      "value": 6,
+      "images": ""
+    },
+    {
+      "text": "Ashok Leyland",
+      "value": 7,
+      "images": ""
+    },
+    {
+      "text": "Bharat Benz",
+      "value": 8,
+      "images": ""
+    },
+    {
+      "text": "Eicher",
+      "value": 9,
+      "images": ""
+    },
+    {
+      "text": "Force",
+      "value": 10,
+      "images": ""
+    },
+    {
+      "text": "ISUZU",
+      "value": 11,
+      "images": ""
+    },
+    {
+      "text": "Mahindra",
+      "value": 12,
+      "images": ""
+    },
+    {
+      "text": "Mahindra Navistar",
+      "value": 13,
+      "images": ""
+    },
+    {
+      "text": "SML ISUZU",
+      "value": 14,
+      "images": ""
+    },
+    {
+      "text": "Swaraj Mazda",
+      "value": 15,
+      "images": ""
+    },
+    {
+      "text": "TATA",
+      "value": 16,
+      "images": ""
+    },
+    {
+      "text": "AMW",
+      "value": 17,
+      "images": ""
+    },
+    {
+      "text": "Ashok Leyland",
+      "value": 18,
+      "images": ""
+    },
+    {
+      "text": "Bharat Benz",
+      "value": 19,
+      "images": ""
+    },
+    {
+      "text": "Eicher",
+      "value": 20,
+      "images": ""
+    },
+    {
+      "text": "Mahindra",
+      "value": 21,
+      "images": ""
+    },
+    {
+      "text": "Mahindra Navistar",
+      "value": 22,
+      "images": ""
+    },
+    {
+      "text": "Nissan",
+      "value": 23,
+      "images": ""
+    },
+    {
+      "text": "Swaraj Mazda",
+      "value": 24,
+      "images": ""
+    },
+    {
+      "text": "TATA",
+      "value": 25,
+      "images": ""
+    },
+    {
+      "text": "Force",
+      "value": 26,
+      "images": ""
+    },
+    {
+      "text": "Bajaj",
+      "value": 27,
+      "images": ""
+    },
+    {
+      "text": "Mahindra",
+      "value": 28,
+      "images": ""
+    },
+    {
+      "text": "Atul",
+      "value": 29,
+      "images": ""
+    },
+    {
+      "text": "JSA",
+      "value": 30,
+      "images": ""
+    },
+    {
+      "text": "Mayuri",
+      "value": 31,
+      "images": ""
+    },
+    {
+      "text": "Saarthi",
+      "value": 32,
+      "images": ""
+    },
+    {
+      "text": "Terra Motors",
+      "value": 33,
+      "images": ""
+    },
+    {
+      "text": "Victory",
+      "value": 34,
+      "images": ""
+    },
+    {
+      "text": "YC",
+      "value": 35,
+      "images": ""
+    },
+    {
+      "text": "AMW",
+      "value": 36,
+      "images": ""
+    },
+    {
+      "text": "Ashok Leyland",
+      "value": 37,
+      "images": ""
+    },
+    {
+      "text": "Bharat Benz",
+      "value": 38,
+      "images": ""
+    },
+    {
+      "text": "Eicher",
+      "value": 39,
+      "images": ""
+    },
+    {
+      "text": "Mahindra",
+      "value": 40,
+      "images": ""
+    },
+    {
+      "text": "Mahindra Navistar",
+      "value": 41,
+      "images": ""
+    },
+    {
+      "text": "Piaggo",
+      "value": 42,
+      "images": ""
+    },
+    {
+      "text": "SML ISUZU",
+      "value": 43,
+      "images": ""
+    },
+    {
+      "text": "Swaraj Mazda",
+      "value": 44,
+      "images": ""
+    },
+    {
+      "text": "TATA",
+      "value": 45,
+      "images": ""
+    },
+    {
+      "text": "TATA",
+      "value": 46,
+      "images": ""
+    },
+    {
+      "text": "Mahindra",
+      "value": 47,
+      "images": ""
+    },
+    {
+      "text": "Ashok Leyland",
+      "value": 48,
+      "images": ""
+    },
+    {
+      "text": "Bajaj",
+      "value": 49,
+      "images": ""
+    },
+    {
+      "text": "Piaggio",
+      "value": 50,
+      "images": ""
+    },
+    {
+      "text": "Mahindra",
+      "value": 51,
+      "images": ""
+    },
+    {
+      "text": "TVS",
+      "value": 52,
+      "images": ""
+    },
+    {
+      "text": "Atul",
+      "value": 53,
+      "images": ""
+    },
+    {
+      "text": "Force",
+      "value": 54,
+      "images": ""
+    },
+    {
+      "text": "Baxy",
+      "value": 55,
+      "images": ""
+    },
+    {
+      "text": "Lohia",
+      "value": 56,
+      "images": ""
+    },
+    {
+      "text": "TATA",
+      "value": 57,
+      "images": ""
+    },
+    {
+      "text": "Mahindra",
+      "value": 58,
+      "images": ""
+    },
+    {
+      "text": "Ashok Leyland",
+      "value": 59,
+      "images": ""
+    },
+    {
+      "text": "Eicher",
+      "value": 60,
+      "images": ""
+    },
+    {
+      "text": "Piaggo",
+      "value": 61,
+      "images": ""
+    },
+    {
+      "text": "Maruti Suzuki",
+      "value": 62,
+      "images": ""
+    },
+    {
+      "text": "Bajaj",
+      "value": 63,
+      "images": ""
+    },
+    {
+      "text": "Atul",
+      "value": 64,
+      "images": ""
+    },
+    {
+      "text": "Swaraj Mazda",
+      "value": 65,
+      "images": ""
+    },
+    {
+      "text": "Force",
+      "value": 66,
+      "images": ""
+    },
+    {
+      "text": "Bajaj",
+      "value": 67,
+      "images": ""
+    },
+    {
+      "text": "Mahindra",
+      "value": 68,
+      "images": ""
+    },
+    {
+      "text": "TATA",
+      "value": 69,
+      "images": ""
+    },
+    {
+      "text": "Force",
+      "value": 70,
+      "images": ""
+    },
+    {
+      "text": "Ashok Leyland",
+      "value": 71,
+      "images": ""
+    },
+    {
+      "text": "Eicher",
+      "value": 72,
+      "images": ""
+    },
+    {
+      "text": "Escorts",
+      "value": 73,
+      "images": ""
+    },
+    {
+      "text": "International Harvester",
+      "value": 74,
+      "images": ""
+    },
+    {
+      "text": "John Deere",
+      "value": 75,
+      "images": ""
+    },
+    {
+      "text": "Mahindra",
+      "value": 76,
+      "images": ""
+    },
+    {
+      "text": "Massey Ferguson",
+      "value": 77,
+      "images": ""
+    },
+    {
+      "text": "Swaraj",
+      "value": 78,
+      "images": ""
+    },
+    {
+      "text": "TATA",
+      "value": 79,
+      "images": ""
+    },
+    {
+      "text": "Force",
+      "value": 80,
+      "images": ""
+    },
+    {
+      "text": "Eicher",
+      "value": 81,
+      "images": ""
+    },
+    {
+      "text": "Bajaj",
+      "value": 82,
+      "images": ""
+    },
+    {
+      "text": "Bharat Benz",
+      "value": 83,
+      "images": ""
+    },
+    {
+      "text": "Mahindra Navistar",
+      "value": 84,
+      "images": ""
+    },
+    {
+      "text": "VE Comm Vehicles",
+      "value": 85,
+      "images": ""
+    },
+    {
+      "text": "Swaraj Mazda",
+      "value": 86,
+      "images": ""
+    },
+    {
+      "text": "Force",
+      "value": 87,
+      "images": ""
+    },
+    {
+      "text": "TATA",
+      "value": 88,
+      "images": ""
+    },
+    {
+      "text": "Toyota",
+      "value": 89,
+      "images": ""
+    },
+    {
+      "text": "Chevrolet",
+      "value": 90,
+      "images": ""
+    },
+    {
+      "text": "Ford",
+      "value": 91,
+      "images": ""
+    },
+    {
+      "text": "Mahindra",
+      "value": 92,
+      "images": ""
+    },
+    {
+      "text": "Skoda",
+      "value": 93,
+      "images": ""
+    },
+    {
+      "text": "Volkswagon",
+      "value": 94,
+      "images": ""
+    },
+    {
+      "text": "Nissan",
+      "value": 95,
+      "images": ""
+    },
+    {
+      "text": "Renault",
+      "value": 96,
+      "images": ""
+    },
+    {
+      "text": "Fiat",
+      "value": 97,
+      "images": ""
+    },
+    {
+      "text": "Mercedes",
+      "value": 98,
+      "images": ""
+    },
+    {
+      "text": "Audi",
+      "value": 99,
+      "images": ""
+    },
+    {
+      "text": "BMW",
+      "value": 100,
+      "images": ""
+    },
+    {
+      "text": "KIA",
+      "value": 101,
+      "images": ""
+    },
+    {
+      "text": "MG",
+      "value": 102,
+      "images": ""
+    },
+    {
+      "text": "Aston Martin",
+      "value": 103,
+      "images": ""
+    },
+    {
+      "text": "Bentley",
+      "value": 104,
+      "images": ""
+    },
+    {
+      "text": "Datsun",
+      "value": 105,
+      "images": ""
+    },
+    {
+      "text": "Ferrari",
+      "value": 106,
+      "images": ""
+    },
+    {
+      "text": "Hindustan",
+      "value": 107,
+      "images": ""
+    },
+    {
+      "text": "Infiniti",
+      "value": 108,
+      "images": ""
+    },
+    {
+      "text": "ISUZU",
+      "value": 109,
+      "images": ""
+    },
+    {
+      "text": "Jaguar",
+      "value": 110,
+      "images": ""
+    },
+    {
+      "text": "Jeep",
+      "value": 111,
+      "images": ""
+    },
+    {
+      "text": "Lamborghni",
+      "value": 112,
+      "images": ""
+    },
+    {
+      "text": "Land Rover",
+      "value": 113,
+      "images": ""
+    },
+    {
+      "text": "Mitsubishi",
+      "value": 114,
+      "images": ""
+    },
+    {
+      "text": "Lexus",
+      "value": 115,
+      "images": ""
+    },
+    {
+      "text": "Maserati",
+      "value": 116,
+      "images": ""
+    },
+    {
+      "text": "Mazda",
+      "value": 117,
+      "images": ""
+    },
+    {
+      "text": "Mini",
+      "value": 118,
+      "images": ""
+    },
+    {
+      "text": "Opel",
+      "value": 119,
+      "images": ""
+    },
+    {
+      "text": "Porsche",
+      "value": 120,
+      "images": ""
+    },
+    {
+      "text": "Rolls Royce",
+      "value": 121,
+      "images": ""
+    },
+    {
+      "text": "Volvo",
+      "value": 122,
+      "images": ""
+    },
+    {
+      "text": "Willeys",
+      "value": 123,
+      "images": ""
+    },
+    {
+      "text": "MANITOU",
+      "value": 124,
+      "images": ""
+    },
+    {
+      "text": "ATLAS COPCO",
+      "value": 125,
+      "images": ""
+    },
+    {
+      "text": "INGERSOLL RAND",
+      "value": 126,
+      "images": ""
+    },
+    {
+      "text": "SCHWING",
+      "value": 127,
+      "images": ""
+    },
+    {
+      "text": "ASHOK LEYLAND",
+      "value": 128,
+      "images": ""
+    },
+    {
+      "text": "TATA",
+      "value": 129,
+      "images": ""
+    },
+    {
+      "text": "TATA",
+      "value": 130,
+      "images": ""
+    },
+    {
+      "text": "VE COMMERCIAL VEHICLE LTD",
+      "value": 131,
+      "images": ""
+    },
+    {
+      "text": "AMERICAN",
+      "value": 132,
+      "images": ""
+    },
+    {
+      "text": "DEMAG",
+      "value": 133,
+      "images": ""
+    },
+    {
+      "text": "FUSHUN",
+      "value": 134,
+      "images": ""
+    },
+    {
+      "text": "FUWA HEAVY INDUSTRIES",
+      "value": 135,
+      "images": ""
+    },
+    {
+      "text": "KOBELCO",
+      "value": 136,
+      "images": ""
+    },
+    {
+      "text": "LIEBHERR",
+      "value": 137,
+      "images": ""
+    },
+    {
+      "text": "SANY",
+      "value": 138,
+      "images": ""
+    },
+    {
+      "text": "TATA",
+      "value": 139,
+      "images": ""
+    },
+    {
+      "text": "EICHER",
+      "value": 140,
+      "images": ""
+    },
+    {
+      "text": "SFC",
+      "value": 141,
+      "images": ""
+    },
+    {
+      "text": "TATA",
+      "value": 142,
+      "images": ""
+    },
+    {
+      "text": "BEML",
+      "value": 143,
+      "images": ""
+    },
+    {
+      "text": "TATA",
+      "value": 144,
+      "images": ""
+    },
+    {
+      "text": "VE COMMERCIAL VEHICLE LTD",
+      "value": 145,
+      "images": ""
+    },
+    {
+      "text": "HITACHI",
+      "value": 146,
+      "images": ""
+    },
+    {
+      "text": "TCECL",
+      "value": 147,
+      "images": ""
+    },
+    {
+      "text": "CARGOTEC INDIA PVT LTD",
+      "value": 148,
+      "images": ""
+    },
+    {
+      "text": "GODREJ",
+      "value": 149,
+      "images": ""
+    },
+    {
+      "text": "VOLTAS",
+      "value": 150,
+      "images": ""
+    },
+    {
+      "text": "EICHER",
+      "value": 151,
+      "images": ""
+    },
+    {
+      "text": "EICHER",
+      "value": 152,
+      "images": ""
+    },
+    {
+      "text": "KAMVAC",
+      "value": 153,
+      "images": ""
+    },
+    {
+      "text": "TATA",
+      "value": 154,
+      "images": ""
+    },
+    {
+      "text": "TATA",
+      "value": 155,
+      "images": ""
+    },
+    {
+      "text": "JCB",
+      "value": 156,
+      "images": ""
+    },
+    {
+      "text": "DOOSAN BOBCAT INDIA PRIVATE LIMITED",
+      "value": 157,
+      "images": ""
+    },
+    {
+      "text": "KOMATSU",
+      "value": 158,
+      "images": ""
+    },
+    {
+      "text": "ACE",
+      "value": 159,
+      "images": ""
+    },
+    {
+      "text": "ESCORT",
+      "value": 160,
+      "images": ""
+    },
+    {
+      "text": "INDO POWER",
+      "value": 161,
+      "images": ""
+    },
+    {
+      "text": "PIXEF",
+      "value": 162,
+      "images": ""
+    },
+    {
+      "text": "TATA",
+      "value": 163,
+      "images": ""
+    },
+    {
+      "text": "LIEBHERR",
+      "value": 164,
+      "images": ""
+    },
+    {
+      "text": "SANY",
+      "value": 165,
+      "images": ""
+    },
+    {
+      "text": "TIL ",
+      "value": 166,
+      "images": ""
+    },
+    {
+      "text": "JLG",
+      "value": 167,
+      "images": ""
+    },
+    {
+      "text": "TATA",
+      "value": 168,
+      "images": ""
+    },
+    {
+      "text": "TATA",
+      "value": 169,
+      "images": ""
+    },
+    {
+      "text": "DOOSAN BOBCAT INDIA PRIVATE LIMITED",
+      "value": 170,
+      "images": ""
+    },
+    {
+      "text": "INGERSOLL RAND",
+      "value": 171,
+      "images": ""
+    },
+    {
+      "text": "TEREX",
+      "value": 172,
+      "images": ""
+    },
+    {
+      "text": "TATA",
+      "value": 173,
+      "images": ""
+    },
+    {
+      "text": "TATA",
+      "value": 174,
+      "images": ""
+    },
+    {
+      "text": "EICHER",
+      "value": 175,
+      "images": ""
+    },
+    {
+      "text": "SWARAJ MAZDA",
+      "value": 176,
+      "images": ""
+    },
+    {
+      "text": "TAFE",
+      "value": 177,
+      "images": ""
+    },
+    {
+      "text": "ASHOK LEYLAND",
+      "value": 178,
+      "images": ""
+    },
+    {
+      "text": "TATA ",
+      "value": 179,
+      "images": ""
+    },
+    {
+      "text": "VOLVO",
+      "value": 180,
+      "images": ""
+    },
+    {
+      "text": "ASHOK LEYLAND",
+      "value": 181,
+      "images": ""
+    },
+    {
+      "text": "TATA",
+      "value": 182,
+      "images": ""
+    },
+    {
+      "text": "TATA",
+      "value": 183,
+      "images": ""
+    },
+    {
+      "text": "VE COMMERCIAL VEHICLE LTD",
+      "value": 184,
+      "images": ""
+    },
+    {
+      "text": "DEMAG",
+      "value": 185,
+      "images": ""
+    },
+    {
+      "text": "GROVE",
+      "value": 186,
+      "images": ""
+    },
+    {
+      "text": "LIEBHERR",
+      "value": 187,
+      "images": ""
+    },
+    {
+      "text": "MAEDA",
+      "value": 188,
+      "images": ""
+    },
+    {
+      "text": "TADANO",
+      "value": 189,
+      "images": ""
+    },
+    {
+      "text": "TIL",
+      "value": 190,
+      "images": ""
+    },
+    {
+      "text": "XCMG",
+      "value": 191,
+      "images": ""
+    },
+    {
+      "text": "ZOOMLION",
+      "value": 192,
+      "images": ""
+    },
+    {
+      "text": "ESCORT",
+      "value": 193,
+      "images": ""
+    },
+    {
+      "text": "GREAVES",
+      "value": 194,
+      "images": ""
+    },
+    {
+      "text": "WACKER",
+      "value": 195,
+      "images": ""
+    },
+    {
+      "text": "ADORE",
+      "value": 196,
+      "images": ""
+    },
+    {
+      "text": "JCB",
+      "value": 197,
+      "images": ""
+    },
+    {
+      "text": "HERO Electric Vehicles Pvt Ltd ",
+      "value": 198,
+      "images": ""
+    },
+    {
+      "text": "Okinawa Scooters",
+      "value": 199,
+      "images": ""
+    },
+    {
+      "text": "Ampere Vehicles",
+      "value": 200,
+      "images": ""
+    },
+    {
+      "text": "OLA Electric",
+      "value": 201,
+      "images": ""
+    },
+    {
+      "text": "TVS Motors",
+      "value": 202,
+      "images": ""
+    },
+    {
+      "text": "Jitendra Electric Vehicles",
+      "value": 203,
+      "images": ""
+    },
+    {
+      "text": "Bounce Electric Vehicles",
+      "value": 204,
+      "images": ""
+    },
+    {
+      "text": "Batt:RE Scooter",
+      "value": 205,
+      "images": ""
+    },
+    {
+      "text": "Pure EV",
+      "value": 206,
+      "images": ""
+    },
+    {
+      "text": "Ather",
+      "value": 207,
+      "images": ""
+    },
+    {
+      "text": "Okaya Electric Scooters ",
+      "value": 208,
+      "images": ""
+    },
+    {
+      "text": "Shema Electric Vehicles",
+      "value": 209,
+      "images": ""
+    },
+    {
+      "text": "BGAUSS Electric Scooters ",
+      "value": 210,
+      "images": ""
+    },
+    {
+      "text": "TOYOTA",
+      "value": 211,
+      "images": ""
+    },
+    {
+      "text": "EICHER",
+      "value": 212,
+      "images": ""
+    }
+  ],
+  "manufacture_year": [
+    {
+      "text": "1950",
+      "value": 1,
+      "images": ""
+    },
+    {
+      "text": "1951",
+      "value": 2,
+      "images": ""
+    },
+    {
+      "text": "1952",
+      "value": 3,
+      "images": ""
+    },
+    {
+      "text": "1953",
+      "value": 4,
+      "images": ""
+    },
+    {
+      "text": "1954",
+      "value": 5,
+      "images": ""
+    },
+    {
+      "text": "1955",
+      "value": 6,
+      "images": ""
+    },
+    {
+      "text": "1956",
+      "value": 7,
+      "images": ""
+    },
+    {
+      "text": "1957",
+      "value": 8,
+      "images": ""
+    },
+    {
+      "text": "1958",
+      "value": 9,
+      "images": ""
+    },
+    {
+      "text": "1959",
+      "value": 10,
+      "images": ""
+    },
+    {
+      "text": "1960",
+      "value": 11,
+      "images": ""
+    },
+    {
+      "text": "1961",
+      "value": 12,
+      "images": ""
+    },
+    {
+      "text": "1962",
+      "value": 13,
+      "images": ""
+    },
+    {
+      "text": "1963",
+      "value": 14,
+      "images": ""
+    },
+    {
+      "text": "1964",
+      "value": 15,
+      "images": ""
+    },
+    {
+      "text": "1965",
+      "value": 16,
+      "images": ""
+    },
+    {
+      "text": "1966",
+      "value": 17,
+      "images": ""
+    },
+    {
+      "text": "1967",
+      "value": 18,
+      "images": ""
+    },
+    {
+      "text": "1968",
+      "value": 19,
+      "images": ""
+    },
+    {
+      "text": "1969",
+      "value": 20,
+      "images": ""
+    },
+    {
+      "text": "1970",
+      "value": 21,
+      "images": ""
+    },
+    {
+      "text": "1971",
+      "value": 22,
+      "images": ""
+    },
+    {
+      "text": "1972",
+      "value": 23,
+      "images": ""
+    },
+    {
+      "text": "1973",
+      "value": 24,
+      "images": ""
+    },
+    {
+      "text": "1974",
+      "value": 25,
+      "images": ""
+    },
+    {
+      "text": "1975",
+      "value": 26,
+      "images": ""
+    },
+    {
+      "text": "1976",
+      "value": 27,
+      "images": ""
+    },
+    {
+      "text": "1977",
+      "value": 28,
+      "images": ""
+    },
+    {
+      "text": "1978",
+      "value": 29,
+      "images": ""
+    },
+    {
+      "text": "1979",
+      "value": 30,
+      "images": ""
+    },
+    {
+      "text": "1980",
+      "value": 31,
+      "images": ""
+    },
+    {
+      "text": "1981",
+      "value": 32,
+      "images": ""
+    },
+    {
+      "text": "1982",
+      "value": 33,
+      "images": ""
+    },
+    {
+      "text": "1983",
+      "value": 34,
+      "images": ""
+    },
+    {
+      "text": "1984",
+      "value": 35,
+      "images": ""
+    },
+    {
+      "text": "1985",
+      "value": 36,
+      "images": ""
+    },
+    {
+      "text": "1986",
+      "value": 37,
+      "images": ""
+    },
+    {
+      "text": "1987",
+      "value": 38,
+      "images": ""
+    },
+    {
+      "text": "1988",
+      "value": 39,
+      "images": ""
+    },
+    {
+      "text": "1989",
+      "value": 40,
+      "images": ""
+    },
+    {
+      "text": "1990",
+      "value": 41,
+      "images": ""
+    },
+    {
+      "text": "1991",
+      "value": 42,
+      "images": ""
+    },
+    {
+      "text": "1992",
+      "value": 43,
+      "images": ""
+    },
+    {
+      "text": "1993",
+      "value": 44,
+      "images": ""
+    },
+    {
+      "text": "1994",
+      "value": 45,
+      "images": ""
+    },
+    {
+      "text": "1995",
+      "value": 46,
+      "images": ""
+    },
+    {
+      "text": "1996",
+      "value": 47,
+      "images": ""
+    },
+    {
+      "text": "1997",
+      "value": 48,
+      "images": ""
+    },
+    {
+      "text": "1998",
+      "value": 49,
+      "images": ""
+    },
+    {
+      "text": "1999",
+      "value": 50,
+      "images": ""
+    },
+    {
+      "text": "2000",
+      "value": 51,
+      "images": ""
+    },
+    {
+      "text": "2001",
+      "value": 52,
+      "images": ""
+    },
+    {
+      "text": "2002",
+      "value": 53,
+      "images": ""
+    },
+    {
+      "text": "2003",
+      "value": 54,
+      "images": ""
+    },
+    {
+      "text": "2004",
+      "value": 55,
+      "images": ""
+    },
+    {
+      "text": "2005",
+      "value": 56,
+      "images": ""
+    },
+    {
+      "text": "2006",
+      "value": 57,
+      "images": ""
+    },
+    {
+      "text": "2007",
+      "value": 58,
+      "images": ""
+    },
+    {
+      "text": "2008",
+      "value": 59,
+      "images": ""
+    },
+    {
+      "text": "2009",
+      "value": 60,
+      "images": ""
+    },
+    {
+      "text": "2010",
+      "value": 61,
+      "images": ""
+    },
+    {
+      "text": "2011",
+      "value": 62,
+      "images": ""
+    },
+    {
+      "text": "2012",
+      "value": 63,
+      "images": ""
+    },
+    {
+      "text": "2013",
+      "value": 64,
+      "images": ""
+    },
+    {
+      "text": "2014",
+      "value": 65,
+      "images": ""
+    },
+    {
+      "text": "2015",
+      "value": 66,
+      "images": ""
+    },
+    {
+      "text": "2016",
+      "value": 67,
+      "images": ""
+    },
+    {
+      "text": "2017",
+      "value": 68,
+      "images": ""
+    },
+    {
+      "text": "2018",
+      "value": 69,
+      "images": ""
+    },
+    {
+      "text": "2019",
+      "value": 70,
+      "images": ""
+    },
+    {
+      "text": "2020",
+      "value": 71,
+      "images": ""
+    },
+    {
+      "text": "2021",
+      "value": 72,
+      "images": ""
+    },
+    {
+      "text": "2022",
+      "value": 73,
+      "images": ""
+    },
+    {
+      "text": "2023",
+      "value": 74,
+      "images": ""
+    }
+  ],
+  "fuel_type": [
+    {
+      "text": "PETROL",
+      "value": 1,
+      "images": ""
+    },
+    {
+      "text": "DIESEL",
+      "value": 2,
+      "images": ""
+    },
+    {
+      "text": "LPG",
+      "value": 3,
+      "images": ""
+    },
+    {
+      "text": "CNG",
+      "value": 4,
+      "images": ""
+    },
+    {
+      "text": "CNG-PETROL",
+      "value": 5,
+      "images": ""
+    },
+    {
+      "text": "LPG-PETROL",
+      "value": 6,
+      "images": ""
+    },
+    {
+      "text": "ELECTRIC",
+      "value": 7,
+      "images": ""
+    }
+  ]
+}

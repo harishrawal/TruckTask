@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TruckTask</string>
+    <string name="add_vehicle">Add Vehicle</string>
+    <string name="enter_last_6_digits_of_IMEI">Enter last 6-digits of IMEI</string>
+    <string name="imei">IMEI</string>
+    <string name="vehicle_details">Vehicle Details</string>
+    <string name="tag_name">Tag Name</string>
+    <string name="registration_number">Registration Number</string>
+    <string name="vehicle_type">Vehicle Type</string>
+    <string name="ownership">Ownership</string>
+    <string name="own">Own</string>
+    <string name="contractor">Contractor</string>
+    <string name="add_details">+ Add</string>
+    <string name="more">More</string>
+    <string name="less">Less</string>
+</resources>
