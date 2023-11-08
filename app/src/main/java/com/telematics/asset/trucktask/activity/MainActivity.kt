@@ -2,6 +2,7 @@ package com.telematics.asset.trucktask.activity
 
 import android.app.AlertDialog
 import android.content.DialogInterface
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -20,9 +21,20 @@ import com.journeyapps.barcodescanner.ScanContract
 import com.journeyapps.barcodescanner.ScanIntentResult
 import com.journeyapps.barcodescanner.ScanOptions
 import com.telematics.asset.trucktask.R
-import com.telematics.asset.trucktask.adapter.*
+import com.telematics.asset.trucktask.adapter.CustomAdapter
+import com.telematics.asset.trucktask.adapter.FuelTypeSpinnerAdapter
+import com.telematics.asset.trucktask.adapter.VehicleCapacitySpinnerAdapter
+import com.telematics.asset.trucktask.adapter.VehicleMakeSpinnerAdapter
+import com.telematics.asset.trucktask.adapter.VehicleNameSpinnerAdapter
+import com.telematics.asset.trucktask.adapter.VehicleYearMFSpinnerAdapter
 import com.telematics.asset.trucktask.databinding.ActivityMainBinding
-import com.telematics.asset.trucktask.model.*
+import com.telematics.asset.trucktask.model.FuelType
+import com.telematics.asset.trucktask.model.ManufactureYear
+import com.telematics.asset.trucktask.model.VehicleCapacity
+import com.telematics.asset.trucktask.model.VehicleDataResponse
+import com.telematics.asset.trucktask.model.VehicleMake
+import com.telematics.asset.trucktask.model.VehicleType
+import com.telematics.asset.trucktask.util.Constants
 import com.telematics.asset.trucktask.viewmodel.MainViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -41,11 +53,14 @@ class MainActivity : AppCompatActivity() {
     private var selectedVehicleType = ""
     private var ownerShip = ""
 
+    private lateinit var sharedPreferences: SharedPreferences
+    private lateinit var sharedPreferencesEditor: SharedPreferences.Editor
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        getSharedPrefs()
         setupImeiNumberInputs()
 
         binding.IvScan.setOnClickListener {
@@ -96,6 +111,13 @@ class MainActivity : AppCompatActivity() {
         }
 
         setObserver()
+
+    }
+
+    private fun getSharedPrefs() {
+        sharedPreferences = getSharedPreferences(
+            Constants.JIO_HUMSAFAR_FCEV_PREFS, 0)
+        sharedPreferencesEditor = sharedPreferences.edit()
     }
 
     private fun setObserver() {
@@ -109,8 +131,10 @@ class MainActivity : AppCompatActivity() {
                 Status.SUCCESS -> {
                   //  progressBar.visibility = View.GONE
                  //   recyclerView.visibility = View.VISIBLE
+
                     it.data?.let { loadData(it)
-                    Toast.makeText(this, it.message, Toast.LENGTH_LONG).show()
+                     sharedPreferencesEditor.putString(Constants.API_MESSAGE, it.message).apply()
+                     Toast.makeText(this, it.message, Toast.LENGTH_LONG).show()
                     }
                 }
                 Status.LOADING -> {
@@ -447,6 +471,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun resetAllValues() {
         try {
+            Toast.makeText(this, sharedPreferences.getString(Constants.API_MESSAGE, ""), Toast.LENGTH_LONG).show()
             clearExistingIMEIData()
             binding.etImei.setText("")
             binding.etTagName.setText("")

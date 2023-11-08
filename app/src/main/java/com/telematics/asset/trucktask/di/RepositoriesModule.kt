@@ -13,5 +13,9 @@ interface RepositoriesModule {
     @Binds
     fun mainRepository(mainRepositoryImpl: MainRepositoryImpl) : MainRepository
 
+
+    /*TODO Login*/
+  //  @Binds
+  //  fun loginRepository(mainRepositoryImpl: MainRepositoryImpl) : MainRepository
 }
 
